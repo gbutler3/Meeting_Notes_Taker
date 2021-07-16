@@ -1,0 +1,24 @@
+{
+  "name": "Week-11-HW",
+  "version": "1.0.0",
+  "description": "![MIT License](https://img.shields.io/badge/License-MIT-brightgreen)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbutler3/Task_And_Meeting_Notes_Taker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbutler3/Task_And_Meeting_Notes_Taker/issues"
+  },
+  "homepage": "https://github.com/gbutler3/Task_And_Meeting_Notes_Taker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "inquirer": "^8.1.2"
+  }
+}
