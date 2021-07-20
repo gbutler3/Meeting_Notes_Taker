@@ -24,7 +24,7 @@ As a busy individual, I want to write and save notes so that I can organize and 
 ## Demo
 
 Here is a video demonstrating this generator in action.
-Comming Soon! <!-- ![Click here to see the demo](#) -->
+Coming Soon! <!-- ![Click here to see the demo](#) -->
 
 ## Contact
 
