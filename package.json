@@ -20,6 +20,8 @@
   "homepage": "https://github.com/gbutler3/Task_And_Meeting_Notes_Taker#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "inquirer": "^8.1.2"
+    "fs": "0.0.1-security",
+    "inquirer": "^8.1.2",
+    "path": "^0.12.7"
   }
 }
