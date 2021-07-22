@@ -2,7 +2,14 @@
   "name": "Week-11-HW",
   "version": "1.0.0",
   "description": "![MIT License](https://img.shields.io/badge/License-MIT-brightgreen)",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.1.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -17,11 +24,5 @@
   "bugs": {
     "url": "https://github.com/gbutler3/Task_And_Meeting_Notes_Taker/issues"
   },
-  "homepage": "https://github.com/gbutler3/Task_And_Meeting_Notes_Taker#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "fs": "0.0.1-security",
-    "inquirer": "^8.1.2",
-    "path": "^0.12.7"
-  }
+  "homepage": "https://github.com/gbutler3/Task_And_Meeting_Notes_Taker#readme"
 }
