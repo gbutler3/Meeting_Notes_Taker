@@ -13,16 +13,15 @@ module.exports = (app) => {
     });
 
 
-app.get('/api/notes/:id', function(req, res){
-  
+  app.get('/api/notes/:id', function(req, res){
   res.json(dbData[Number(req.params.id)]);
   });
 
   app.post('/api/notes', function(req,res) {
     let newNote = req.body;
-    let idNum = (data.length).toString();
+    let idNum = (dbData.length).toString();
     newNote.id= idNum;
-    data.push(newNote);
+    dbData.push(newNote);
   
     fs.writeFileSync(path.join(__dirname,'../db/db.json'), JSON.stringify(dbData), function(err) {
       if (err) throw (err);
