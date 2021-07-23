@@ -1,7 +1,9 @@
 // LOAD DATA
 // We are linking our routes to a series of "data" sources. These data sources hold arrays of information 
 const path = require('path');
-const fs = require ('fs')
+const fs = require ('fs');
+const { restoreDefaultPrompts } = require('inquirer');
+const { setMaxListeners } = require('process');
 
 var dbData = JSON.parse(fs.readFileSync(path.join(__dirname,'../db/db.json')));
 // ROUTING
@@ -30,5 +32,20 @@ module.exports = (app) => {
     res.json(dbData);
     
   }); 
+
+  //deletes all notes 
+  app.delete('/api/notes/:id', function(req, res){
+    let oldNote = req.params.id;
+    let oldNoteID = 0;
+    dbData= dbData.filter (selectedNote =>{
+      return selectedNote.id != oldNote;
+    });
+    for (selectedNote of dbData) {
+      selectedNote.id = oldNoteID.toString();
+      oldNoteID++;
+    }
+    fs.writeFileSync(path.join(__dirname,'../db/db.json'), JSON.stringify(dbData));
+    res.json(dbData);
+  })
   
 }
