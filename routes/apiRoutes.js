@@ -47,5 +47,4 @@ module.exports = (app) => {
     fs.writeFileSync(path.join(__dirname,'../db/db.json'), JSON.stringify(dbData));
     res.json(dbData);
   })
-  
 }
