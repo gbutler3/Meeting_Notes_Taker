@@ -23,9 +23,10 @@ As a busy individual, I want to write and save notes so that I can organize and 
 
 ## Demo
 
-[Click here to see the demo!](https://drive.google.com/file/d/1UhSJbS_-ODTZSDE3UiE3DG_Xq2nlRfJu/view?usp=sharing)
-
 [Click here for deployed application in Heroku!](https://obscure-thicket-67236.herokuapp.com/)
+
+
+https://user-images.githubusercontent.com/82067962/133666131-b23af2da-49d0-42ec-a7a6-59df65c22e21.mp4
 
 ## Contact
 
